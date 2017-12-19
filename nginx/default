@@ -23,7 +23,9 @@ server {
 
     error_page 404 /index.php;
 
+    # Disable .htaccess and other hidden files
     location ~ /\.ht {
         deny all;
     }
 }
+# vim:ft=nginx
